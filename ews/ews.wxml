@@ -11,6 +11,11 @@
 <button class = "start_button" bindtap="query" style="padding: 15px 32px;width: 50%;background-color:rgb(255,255,255);color: #ff8719; border-color: #ff8719;" type="primary">开始</button>
     </view>
     <view class="page__hd">
+</view><view class="page__hd">
+</view><view class="page__hd">
+</view><view class="page__hd">
+</view>
+<view class="page__hd">
 </view>
 </view>
 

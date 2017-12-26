@@ -3,8 +3,17 @@
   background:#fff;
 }
 #panel text{
-  line-height: 33vh;
+  line-height: 18vh;
   border-right: 1rpx solid #ddd;
+  border-top: 1rpx solid #ddd;
+  border-left: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+#panel image{
+  height: 18vh;
+  border-right: 1rpx solid #ddd;
+  border-top: 1rpx solid #ddd;
+  border-left: 1rpx solid #ddd;
   border-bottom: 1rpx solid #ddd;
 }
 .flex-row{
@@ -20,5 +29,8 @@
   align-items: stretch;
 }
 .flex-cell{
-  flex: 1;
+  flex: 0 0 30%;
+}
+.flex-cell2{
+  flex: 0 0 50%;
 }

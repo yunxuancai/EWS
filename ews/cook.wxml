@@ -2,3 +2,6 @@
 <image animation="{{spreakingAnimation}}" src="{{fileSrc}}" class="upload-img" wx:if="{{fileSrc}}" mode = 'widthFix' style='opacity : {{opacity}}'></image>
 <button bindtap="eat" type="primary">开始</button>
 <button bindtap="put" type="primary">扔</button>
+<button bindtap="put2" type="primary">扔</button>
+<button bindtap="put3" type="primary">扔</button>
+<button bindtap="put4" type="primary">扔</button>

@@ -28,14 +28,65 @@ Page({
   },
   put: function () {
     this.setData({
-      opacity: 1
+      opacity: 1,fileSrc:'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
     })
     var animation = wx.createAnimation({
-      duration: 1000
+      duration: 500
     })
-    animation.opacity(0).translateY(100).step();//修改透明度,放大
+    animation.opacity(1).translateY(0).step();
+    animation.opacity(0).translateY(100).step();
+    animation.opacity(0).translateY(0).step();
     this.setData({
       spreakingAnimation: animation.export()
     })
+    
+  },
+  put2: function () {
+    this.setData({
+      opacity: 1,
+      fileSrc:'http://a1.att.hudong.com/50/17/01300542872052141645175129437_s.jpg'
+    })
+    var animation = wx.createAnimation({
+      duration: 500
+    })
+    animation.opacity(1).translateY(0).step();
+    animation.opacity(0).translateY(100).step();
+    animation.opacity(0).translateY(0).step();
+    this.setData({
+      spreakingAnimation: animation.export()
+    })
+
+  },
+  put3: function () {
+    this.setData({
+      opacity: 1, 
+      fileSrc: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
+    })
+    var animation = wx.createAnimation({
+      duration: 500
+    })
+    animation.opacity(1).translateY(0).step();
+    animation.opacity(0).translateY(100).step();
+    animation.opacity(0).translateY(0).step();
+    this.setData({
+      spreakingAnimation: animation.export()
+    })
+
+  },
+  put4: function () {
+    this.setData({
+      opacity: 1,
+      fileSrc: 'http://a1.att.hudong.com/50/17/01300542872052141645175129437_s.jpg'
+    })
+    var animation = wx.createAnimation({
+      duration: 500
+    })
+    animation.opacity(1).translateY(0).step();
+    animation.opacity(0).translateY(100).step();
+    animation.opacity(0).translateY(0).step();
+    this.setData({
+      spreakingAnimation: animation.export()
+    })
+
   }
 })
