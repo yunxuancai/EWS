@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.7.2",
 	"appid": "wx5e8b9d92a2cd1620",
-	"projectname": "%E5%8F%AF%E4%BB%A5",
+	"projectname": "EWS",
 	"condition": {
 		"search": {
 			"current": -1,

@@ -1,26 +1,17 @@
 <view class="container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
 
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">balabalabala</view>
-        <view class="page__desc">hahahahah</view>
-
-                <view class="choose-upload" bindtap="chooseImage">
-                    <image animation="{{spreakingAnimation}}" src="{{fileSrc}}" class="upload-img" wx:if="{{fileSrc}}" mode = 'widthFix'></image>
-                </view>
-    </view>
-    <button bindtap="query" type="primary">开始</button>
-    <view class="mid-text">
-          
-    </view>
-    <view class="container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
-    <view class="table"><view class="tr">
-
-    <view class="th"></view>
-    </view></view>
-    
+<view class="page__hd">
 </view>
-
+<view class="page__hd">
+</view>
+<view class="page__hd">
+</view>
+    <view class="page__hd">
+<button class = "start_button" bindtap="query" style="padding: 15px 32px;width: 50%;background-color:rgb(255,255,255);color: #ff8719; border-color: #ff8719;" type="primary">开始</button>
+    </view>
+    <view class="page__hd">
+</view>
 </view>
 
 </view>

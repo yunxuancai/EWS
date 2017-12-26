@@ -186,13 +186,6 @@ Page({
     });
     const token = wx.getStorageSync('token')
     this.setData({ token })
-    var animation = wx.createAnimation({
-      duration: 1000
-    })
-    animation.opacity(0).translateY(100).step();//修改透明度,放大
-    this.setData({
-      spreakingAnimation: animation.export()
-    })
   },
   left() {
     wx.navigateTo({
