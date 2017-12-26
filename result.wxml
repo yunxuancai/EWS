@@ -1,0 +1,19 @@
+<view class="section">
+  <input placeholder="输入关键字"  type="text" bindinput="bindKeyInput" bindconfirm="rollMap" value="{{text}}"/>
+</view>
+<view class="container">
+<view class="{{show?'map_container_show':'.map_container_hidden'}}">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="15" show-location="true" markers="{{markers}}" bindmarkertap="makertap" bindregionchange="redrawMap"></map>
+  <view class="place_info">
+   <text>{{placeData.title}}</text>
+   <text>{{placeData.address}}</text>
+   <text>{{placeData.telephone}}</text>
+   <text>{{placeData.price}}</text>
+ </view>
+</view>
+<view class="sug_info" bindtap="change">
+  <block wx:for="{{sugData}}" wx:key="unique">
+   <view data-value="{{item.name}}" data-latitude="{{item.latitude}}" data-longitude="{{item.longitude}}"bindtap="change">{{item.name}}</view>
+  </block>
+</view>
+</view>

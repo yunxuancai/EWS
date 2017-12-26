@@ -1,0 +1,50 @@
+.map_container_show {
+    height: 450px;
+    width: 100%;
+    position: static;
+}
+
+.map_container_hidden {
+    height: 450px;
+    width: 100%;
+    position: none;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.place_info {
+    padding: 0 5pt;
+}
+
+.place_info text{
+    padding: 3pt 0pt;
+}
+
+input {
+    margin: 10px 10px;
+    background-color: #fff;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sug_info {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    border-top: 1pt solid #000;
+    font-size:1.2em;
+}
+
+.sug_info view{
+    padding: 3pt 10pt;
+    border-bottom:1pt dashed #000;
+}
