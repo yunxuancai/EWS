@@ -19,7 +19,7 @@ Page({
     animationData: {},
     buttonTop: -100,
     buttonLeft: 100,
-    fileSrc: 'http://bpic.588ku.com/element_origin_min_pic/00/94/26/5156f2bf3f135c0.jpg',//'http://ac-f5oadpis.clouddn.com/fb83c03f6896ab4e1c32.png',
+    fileSrc: 'http://ac-f5oadpis.clouddn.com/91f3499f54ad1979573d.png',//'http://ac-f5oadpis.clouddn.com/fb83c03f6896ab4e1c32.png',
     //URL: '',
     token: '',
     seed: 0,

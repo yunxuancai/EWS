@@ -1,11 +1,15 @@
 <view id="panel" class="flex-column">
   <view class="flex-cell flex-row">
-    <text bindtap="showOne" class="flex-cell flex-row">{{one}}</text>
-    <text bindtap="showTwo" class="flex-cell flex-row">{{two}}</text>
+    <image bindtap="showOne" class="flex-cell flex-row" src='{{one}}'></image>
+    <text bindtap="showTwo" class="flex-cell2 flex-row">{{two}}</text>
   </view>
   <view class="flex-row flex-cell">
-    <text bindtap="showThree" class="flex-cell flex-row">{{three}}</text>
-    <text bindtap="showFour" class="flex-cell flex-row">{{four}}</text>
+    <image bindtap="showOne" class="flex-cell flex-row" src='{{three}}'></image>
+    <text bindtap="showFour" class="flex-cell2 flex-row">{{four}}</text>
+  </view>
+  <view class="flex-row flex-cell">
+    <image bindtap="showOne" class="flex-cell flex-row" src='{{three}}'></image>
+    <text bindtap="showFour" class="flex-cell2 flex-row">{{four}}</text>
   </view>
 </view>
-<button bindtap="share" type="primary">分享</button>
+<!--<button bindtap="share" type="primary">分享</button>-->
