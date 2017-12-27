@@ -1,0 +1,138 @@
+/**cool.wxss**/
+.main_content {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+   background-color:#b0e0e6; 
+} 
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.flex-cell{
+  flex: 1;
+}
+#panel{
+  /* margin-top: -90px; */
+  height:140px;
+  background:#fff;
+}
+#panel text{
+  line-height: 70px;
+  border-right: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+.scroll_countdown {
+  display:inline-block;
+  margin-top: 30px;
+  float: left;
+  /* border: 1px solid red; */
+}
+.food_png {
+   display: inline-block;
+  position: absolute; 
+   /* float: left;  */
+  /* border: 1px solid red; */
+}
+.pot_png {
+  display: inline-block;
+  /* border: 1px solid red; */
+}
+image {
+    border: 1px solid blue;  
+}
+.img1 {
+  width: 45px;
+  height: 350px;
+}
+.img2_1 {
+  /* display: inline-block; */
+  /* margin-left: 100px; */
+    position: absolute;  
+  margin-top: -60px;
+  margin-left: 0px;
+  width: 90px;
+  height: 100px;
+}
+.img2_2 {
+  /* display: inline-block; */
+  /* margin-left: 100px; */
+   position: absolute; 
+  margin-top: -60px; 
+  margin-left: 95px;
+  width: 90px;
+  height: 100px;
+}
+.img2_3 {
+  /* display: inline-block; */
+  /* margin-left: 100px; */
+   position: absolute; 
+  margin-top: -60px; 
+  margin-left: 188px;
+  width: 90px;
+  height: 100px;
+}
+.img2_4 {
+  /* display: inline-block; */
+  /* margin-left: 100px; */
+   position: absolute; 
+  margin-top: -60px; 
+  margin-left: 282px;
+  width: 90px;
+  height: 100px;
+}
+.img2_5 {
+  /* display: inline-block; */
+  /* margin-left: 100px; */
+    position: absolute;  
+  margin-top: -60px;
+  margin-left: 0px;
+  width: 90px;
+  height: 100px;
+}
+.img2_6 {
+  /* display: inline-block; */
+  /* margin-left: 100px; */
+   position: absolute; 
+  margin-top: -60px; 
+  margin-left: 95px;
+  width: 90px;
+  height: 100px;
+}
+.img2_7 {
+  /* display: inline-block; */
+  /* margin-left: 100px; */
+   position: absolute; 
+  margin-top: -60px; 
+  margin-left: 188px;
+  width: 90px;
+  height: 100px;
+}
+.img2_8 {
+  /* display: inline-block; */
+  /* margin-left: 100px; */
+   position: absolute; 
+  margin-top: -60px; 
+  margin-left: 282px;
+  width: 90px;
+  height: 100px;
+}
+.img3 {
+  margin-top: 115px;
+  height: 230px;
+}
+.choose_ok {
+  align-items: center;
+  margin-top: 40rpx;
+  margin-left: 295rpx;
+  margin-bottom: 85rpx;
+  width: 160rpx;
+}

@@ -3,8 +3,8 @@ var startPoint;
 Page({
   data:{
     animationData:{},
-        buttonTop:400,
-        buttonLeft:180,
+    buttonTop:400,
+    buttonLeft:180,
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -13,39 +13,39 @@ Page({
     // 页面渲染完成
   },
   onShow:function(){
-        this.animation = wx.createAnimation({
-            duration: 0,
-            timingFunction: 'ease',   
-            success: function (res) {  
-                _this.setData({  
-                  screenHeight: res.windowHeight,  
-                  screenWidth: res.windowWidth, 
-                });  
-            }
-        })
+    this.animation = wx.createAnimation({
+      duration: 0,
+      timingFunction: 'ease',   
+      success: function (res) {  
+        _this.setData({  
+          screenHeight: res.windowHeight,  
+          screenWidth: res.windowWidth, 
+        });  
+      }
+    })
         
     },
 // button拖动的三个方法
     buttonStart: function(e){
-        startPoint = e.touches[0]
+      startPoint = e.touches[0]
     },
     buttonMove: function(e){
-        var endPoint = e.touches[e.touches.length-1]
-        var translateX = endPoint.clientX - startPoint.clientX
-        var translateY = endPoint.clientY - startPoint.clientY
-        startPoint = endPoint
-        var buttonTop = this.data.buttonTop + translateY
-        var buttonLeft = this.data.buttonLeft + translateX
+      var endPoint = e.touches[e.touches.length-1]
+      var translateX = endPoint.clientX - startPoint.clientX
+      var translateY = endPoint.clientY - startPoint.clientY
+      startPoint = endPoint
+      var buttonTop = this.data.buttonTop + translateY
+      var buttonLeft = this.data.buttonLeft + translateX
 
-        if(endPoint.clientX < 0 || endPoint.clientX > this.data.screenWidth) return;
-        //if(endPoint.clientY < 0 || endPoint.clientY > this.data.screenHeight) return;
+      if(endPoint.clientX < 0 || endPoint.clientX > this.data.screenWidth) return;
+      //if(endPoint.clientY < 0 || endPoint.clientY > this.data.screenHeight) return;
 
 
 
-        this.setData({
-        buttonTop:buttonTop,
-        buttonLeft:buttonLeft
-        })
+      this.setData({
+      buttonTop:buttonTop,
+      buttonLeft:buttonLeft
+      })
     },
     buttonEnd: function(e){
       wx.navigateTo({

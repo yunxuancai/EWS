@@ -1,13 +1,14 @@
 {
   "pages": [
-    "ews/ews",
+
     "ews/cook",
+    "ews/ews",
+    
     "ews/result",
     "ews/share",
     "emotion",
     "image/camera.png",
     "result",
-    "direct",
     "pages/index/index"
     
   ],
