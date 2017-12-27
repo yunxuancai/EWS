@@ -28,7 +28,6 @@ Page({
     opacity6: 0,
     opacity7: 0,
     opacity8: 0,
-    fileSrc: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg',
     //当前显示的决定opacity
     // animationData:{},
     // buttonTop:10,
@@ -111,16 +110,24 @@ Page({
   showOne: function () {
     this.setData({
       opacity1: 1, 
-      fileSrc1: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
+      fileSrc1: '/images/icon/01.PNG'
     })
     var animation1 = wx.createAnimation({
-      duration: 400,
-      timingFunction: "ease"
+      // duration: 400,
+      // timingFunction: "ease",
     })
-    animation1.opacity(1).translateX(0).translateY(0).step();
-    animation1.opacity(1).translateX(160).translateY(-330).step();
-    animation1.opacity(0).translateX(160).translateY(-200).step()
-    animation1.opacity(0).translateX(0).translateY(0).step();
+    animation1.opacity(1).translateX(0).translateY(0).step({
+      duration: 70,
+    });
+    animation1.opacity(1).translateX(160).translateY(-380).step({
+      duration: 210,
+    });
+    animation1.opacity(0).translateX(160).translateY(-200).step({
+      duration: 110,
+    })
+    animation1.opacity(0).translateX(0).translateY(0).step({
+      duration: 2,
+    });
     this.setData({
       spreakingAnimation1: animation1.export()
     })
@@ -128,16 +135,24 @@ Page({
   showTwo: function () {
     this.setData({
       opacity2: 1,
-      fileSrc2: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
+      fileSrc2: '/images/icon/02.PNG'
     })
     var animation2 = wx.createAnimation({
-      duration: 400,
-      timingFunction: "ease"
+      // duration: 400,
+      // timingFunction: "ease",
     })
-    animation2.opacity(1).translateX(0).translateY(0).step();
-    animation2.opacity(1).translateX(60).translateY(-330).step();
-    animation2.opacity(0).translateX(60).translateY(-200).step()
-    animation2.opacity(0).translateX(0).translateY(0).step();
+    animation2.opacity(1).translateX(0).translateY(0).step({
+      duration: 70,
+    });
+    animation2.opacity(1).translateX(60).translateY(-380).step({
+      duration: 210,
+    });
+    animation2.opacity(0).translateX(60).translateY(-200).step({
+      duration: 110,
+    })
+    animation2.opacity(0).translateX(0).translateY(0).step({
+      duration: 2,
+    });
     this.setData({
       spreakingAnimation2: animation2.export()
     })
@@ -146,16 +161,24 @@ Page({
   showThree: function () {
     this.setData({
       opacity3: 1,
-      fileSrc3: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
+      fileSrc3: '/images/icon/03.PNG'
     })
     var animation3 = wx.createAnimation({
-      duration: 400,
-      timingFunction: "ease"
+      // duration: 400,
+      // timingFunction: "ease",
     })
-    animation3.opacity(1).translateX(0).translateY(0).step();
-    animation3.opacity(1).translateX(-20).translateY(-330).step();
-    animation3.opacity(0).translateX(-20).translateY(-200).step()
-    animation3.opacity(0).translateX(0).translateY(0).step();
+    animation3.opacity(1).translateX(0).translateY(0).step({
+      duration: 70,
+    });
+    animation3.opacity(1).translateX(-20).translateY(-380).step({
+      duration: 210,
+    });
+    animation3.opacity(0).translateX(-20).translateY(-200).step({
+      duration: 110,
+    })
+    animation3.opacity(0).translateX(0).translateY(0).step({
+      duration: 2,
+    });
     this.setData({
       spreakingAnimation3: animation3.export()
     })
@@ -164,16 +187,24 @@ Page({
   showFour: function () {
     this.setData({
       opacity4: 1,
-      fileSrc4: 'http://a1.att.hudong.com/50/17/01300542872052141645175129437_s.jpg'
+      fileSrc4: '/images/icon/04.PNG'
     })
     var animation4 = wx.createAnimation({
-      duration: 400,
-      timingFunction: "ease"
+      // duration: 400,
+      // timingFunction: "ease",
     })
-    animation4.opacity(1).translateX(0).translateY(0).step();
-    animation4.opacity(1).translateX(-110).translateY(-330).step();
-    animation4.opacity(0).translateX(-110).translateY(-200).step()
-    animation4.opacity(0).translateX(0).translateY(0).step();
+    animation4.opacity(1).translateX(0).translateY(0).step({
+      duration: 70,
+    });
+    animation4.opacity(1).translateX(-110).translateY(-380).step({
+      duration: 210,
+    });
+    animation4.opacity(0).translateX(-110).translateY(-200).step({
+      duration: 110,
+    })
+    animation4.opacity(0).translateX(0).translateY(0).step({
+      duration: 2,
+    });
     this.setData({
       spreakingAnimation4: animation4.export()
     })
@@ -182,16 +213,24 @@ Page({
   showFive: function () {
     this.setData({
       opacity5: 1,
-      fileSrc5: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
+      fileSrc5: '/images/icon/05.PNG'
     })
     var animation5 = wx.createAnimation({
-      duration: 400,
-      timingFunction: "ease"
+      // duration: 400,
+      // timingFunction: "ease",
     })
-    animation5.opacity(1).translateX(0).translateY(0).step();
-    animation5.opacity(1).translateX(160).translateY(-380).step();
-    animation5.opacity(0).translateX(160).translateY(-250).step()
-    animation5.opacity(0).translateX(0).translateY(0).step();
+    animation5.opacity(1).translateX(0).translateY(0).step({
+      duration: 70,
+    });
+    animation5.opacity(1).translateX(160).translateY(-450).step({
+      duration: 210,
+    });
+    animation5.opacity(0).translateX(160).translateY(-250).step({
+      duration: 110,
+    })
+    animation5.opacity(0).translateX(0).translateY(0).step({
+      duration: 2,
+    });
     this.setData({
       spreakingAnimation5: animation5.export()
     })
@@ -200,16 +239,24 @@ Page({
   showSix: function () {
     this.setData({
       opacity6: 1,
-      fileSrc6: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
+      fileSrc6: '/images/icon/06.PNG'
       })
     var animation6 = wx.createAnimation({
-        duration: 400,
-        timingFunction: "ease"
+        // duration: 400,
+        // timingFunction: "ease",
       })
-    animation6.opacity(1).translateX(0).translateY(0).step();
-    animation6.opacity(1).translateX(60).translateY(-380).step();
-    animation6.opacity(0).translateX(60).translateY(-250).step()
-    animation6.opacity(0).translateX(0).translateY(0).step();
+    animation6.opacity(1).translateX(0).translateY(0).step({
+      duration: 70,
+    });
+    animation6.opacity(1).translateX(60).translateY(-450).step({
+      duration: 210,
+    });
+    animation6.opacity(0).translateX(60).translateY(-250).step({
+      duration: 110,
+    })
+    animation6.opacity(0).translateX(0).translateY(0).step({
+      duration: 2,
+    });
       this.setData({
         spreakingAnimation6: animation6.export()
       })
@@ -218,16 +265,24 @@ Page({
   showSeven: function () {
     this.setData({
       opacity7: 1,
-      fileSrc7: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
+      fileSrc7: '/images/icon/07.PNG'
     })
     var animation7 = wx.createAnimation({
-      duration: 400,
-      timingFunction: "ease"
+      // duration: 400,
+      // timingFunction: "ease",
     })
-    animation7.opacity(1).translateX(0).translateY(0).step();
-    animation7.opacity(1).translateX(-20).translateY(-380).step();
-    animation7.opacity(0).translateX(-20).translateY(-250).step()
-    animation7.opacity(0).translateX(0).translateY(0).step();
+    animation7.opacity(1).translateX(0).translateY(0).step({
+      duration: 70,
+    });
+    animation7.opacity(1).translateX(-20).translateY(-450).step({
+      duration: 210,
+    });
+    animation7.opacity(0).translateX(-20).translateY(-250).step({
+      duration: 110,
+    })
+    animation7.opacity(0).translateX(0).translateY(0).step({
+      duration: 2,
+    });
     this.setData({
       spreakingAnimation7: animation7.export()
     })
@@ -236,16 +291,24 @@ Page({
   showEight: function () {
     this.setData({
       opacity8: 1,
-      fileSrc8: 'https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=847b55849d16fdfadc6cc1ec848e8cea/c8177f3e6709c93d535ba0589f3df8dcd00054f7.jpg'
+      fileSrc8: '/images/icon/08.PNG'
     })
     var animation8 = wx.createAnimation({
-      duration: 400,
-      timingFunction: "ease"
+      // duration: 400,
+      // timingFunction: "ease",
     })
-    animation8.opacity(1).translateX(0).translateY(0).step();
-    animation8.opacity(1).translateX(-110).translateY(-380).step();
-    animation8.opacity(0).translateX(-110).translateY(-250).step()
-    animation8.opacity(0).translateX(0).translateY(0).step();
+    animation8.opacity(1).translateX(0).translateY(0).step({
+      duration: 70,
+    });
+    animation8.opacity(1).translateX(-110).translateY(-450).step({
+      duration: 210,
+    });
+    animation8.opacity(0).translateX(-110).translateY(-250).step({
+      duration: 110,
+    });
+    animation8.opacity(0).translateX(0).translateY(0).step({
+      duration: 2
+    });
     this.setData({
       spreakingAnimation8: animation8.export()
     })

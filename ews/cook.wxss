@@ -3,7 +3,7 @@
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
-   background-color:#b0e0e6; 
+   background-color: #FFAEB9; 
 } 
 .flex-row{
   display: flex;
@@ -22,22 +22,23 @@
 }
 #panel{
   /* margin-top: -90px; */
-  height:140px;
-  background:#fff;
+  height:280rpx;
+  /* background:#fff; */
 }
 #panel text{
-  line-height: 70px;
+  line-height: 140rpx;
   border-right: 1rpx solid #ddd;
   border-bottom: 1rpx solid #ddd;
 }
 .scroll_countdown {
   display:inline-block;
-  margin-top: 30px;
+  margin-top: 60rpx;
+  margin-right: 6rpx;
   float: left;
   /* border: 1px solid red; */
 }
 .food_png {
-   display: inline-block;
+  display: inline-block;
   position: absolute; 
    /* float: left;  */
   /* border: 1px solid red; */
@@ -47,92 +48,88 @@
   /* border: 1px solid red; */
 }
 image {
-    border: 1px solid blue;  
+  /* border: 1rpx solid blue;      */
 }
 .img1 {
-  width: 45px;
-  height: 350px;
+  width: 90rpx;
+  height: 700rpx;
+}
+.img2 {
+  position: absolute; 
+  /* margin-left: 20rpx;  */
+  width: 126rpx;
+  height: 168rpx;
 }
 .img2_1 {
   /* display: inline-block; */
   /* margin-left: 100px; */
-    position: absolute;  
-  margin-top: -60px;
-  margin-left: 0px;
-  width: 90px;
-  height: 100px;
+  margin-top: -120rpx; 
+  margin-left: 20px;
 }
 .img2_2 {
   /* display: inline-block; */
   /* margin-left: 100px; */
-   position: absolute; 
-  margin-top: -60px; 
-  margin-left: 95px;
-  width: 90px;
-  height: 100px;
+  margin-top: -120rpx;  
+  margin-left: 210rpx;
 }
 .img2_3 {
   /* display: inline-block; */
   /* margin-left: 100px; */
-   position: absolute; 
-  margin-top: -60px; 
-  margin-left: 188px;
-  width: 90px;
-  height: 100px;
+  margin-top: -120rpx;  
+  margin-left: 396rpx;
 }
 .img2_4 {
   /* display: inline-block; */
   /* margin-left: 100px; */
-   position: absolute; 
-  margin-top: -60px; 
-  margin-left: 282px;
-  width: 90px;
-  height: 100px;
+  margin-top: -120rpx;  
+  margin-left: 584rpx;
 }
 .img2_5 {
   /* display: inline-block; */
   /* margin-left: 100px; */
-    position: absolute;  
-  margin-top: -60px;
-  margin-left: 0px;
-  width: 90px;
-  height: 100px;
+  /* margin-top: -120rpx; */
+  margin-left: 20px;
 }
 .img2_6 {
   /* display: inline-block; */
   /* margin-left: 100px; */
-   position: absolute; 
-  margin-top: -60px; 
-  margin-left: 95px;
-  width: 90px;
-  height: 100px;
+  /* margin-top: -120rpx;  */
+  margin-left: 210rpx;
 }
 .img2_7 {
   /* display: inline-block; */
   /* margin-left: 100px; */
-   position: absolute; 
-  margin-top: -60px; 
-  margin-left: 188px;
-  width: 90px;
-  height: 100px;
+  /* margin-top: -120rpx;  */
+  margin-left: 396rpx;
 }
 .img2_8 {
   /* display: inline-block; */
   /* margin-left: 100px; */
-   position: absolute; 
-  margin-top: -60px; 
-  margin-left: 282px;
-  width: 90px;
-  height: 100px;
+  /* margin-top: -120rpx;  */
+  margin-left: 584rpx;
 }
 .img3 {
-  margin-top: 115px;
-  height: 230px;
+  margin-top: 190rpx;
+  height: 520rpx;
+}
+.img_OK {
+  height: 80rpx;
+  width: 170rpx; 
 }
 .choose_ok {
   align-items: center;
-  margin-top: 40rpx;
+  margin-top: 50rpx;
   margin-left: 295rpx;
-  margin-bottom: 85rpx;
+  margin-bottom: 60rpx;
   width: 160rpx;
+}
+.img_show_food {
+  height: 140rpx;
+  width: 105rpx;
+   transform:scale(1.01); 
+}
+.image-container{
+  width: 187.5rpx;
+  text-align: center;
+  /* border: 1px solid red;  */
 }
