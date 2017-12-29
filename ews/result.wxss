@@ -34,3 +34,10 @@
 .flex-cell2{
   flex: 0 0 50%;
 }
+.boy1 {
+  margin-left: 250rpx;
+  height: 320rpx;
+  width: 250rpx;
+  /* transform:scale(1.3); */
+  
+}

@@ -1,10 +1,12 @@
 {
   "pages": [
-
-    "ews/cook",
     "ews/ews",
+    "ews/cook",
     
     "ews/result",
+    
+    "example/index",
+    
     "ews/share",
     "emotion",
     "image/camera.png",

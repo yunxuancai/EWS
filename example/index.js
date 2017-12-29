@@ -19,7 +19,7 @@ Page({
         animationData:{},
         buttonTop:-100,
         buttonLeft:100,
-        fileSrc: 'http://ac-f5oadpis.clouddn.com/fb83c03f6896ab4e1c32.png',
+        fileSrc: '/images/icon/01.png',
         //URL: '',
         token: '',
         seed : 0

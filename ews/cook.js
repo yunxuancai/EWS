@@ -1,25 +1,20 @@
 var seed = 0
-var list = new Array()
-list[0] = "Saab"
-list[1] = "Volvo"
-list[2] = "BMW"
-list[3] = "Tesla"
-list[4] = "Benz"
-list[5] = "Toyota"
-list[6] = "HONDA"
-list[7] = "Maserati"
 // var startPoint
 Page({
   data: {
-    cook: '', 
-    one: '',
-    two: '',
-    three: '',
-    four: '',
-    five: '',
-    six: '',
-    seven: '',
-    eight: '',
+    img_OK: 'http://ac-f5oadpis.clouddn.com/1e002520168e2620a135.png',
+    img_BG: 'http://ac-f5oadpis.clouddn.com/4bacec3c56758096d20d.jpg',
+    img_POT: 'http://ac-f5oadpis.clouddn.com/5735c19c94ce53831b67.png',
+    img_HANDSOMEBOY: 'http://ac-f5oadpis.clouddn.com/0b32a502e72b5319f1a7.jpg',
+    fileSrc1: 'http://ac-f5oadpis.clouddn.com/a41f110cbbdf9df86c42.PNG', // honey
+    fileSrc2: 'http://ac-f5oadpis.clouddn.com/eba6bd85de5fa6aa7b8a.PNG', //chicken
+    fileSrc3: 'http://ac-f5oadpis.clouddn.com/0302ae7817986473154a.PNG', //lemon
+    fileSrc4: 'http://ac-f5oadpis.clouddn.com/71e406b52d5bf911078e.PNG', //broccoli
+    fileSrc5: 'http://ac-f5oadpis.clouddn.com/141cc980e60aaf6fc7ea.PNG', //beer
+    fileSrc6: 'http://ac-f5oadpis.clouddn.com/38c931d29edfa57fc403.PNG', //noodle
+    fileSrc7: 'http://ac-f5oadpis.clouddn.com/e61350adafc7c8522e4b.PNG', //soySauce
+    fileSrc8: 'http://ac-f5oadpis.clouddn.com/20b11f7f96b08d16e4e3.PNG', //chili
+
     opacity1: 0,
     opacity2: 0,
     opacity3: 0,
@@ -28,10 +23,7 @@ Page({
     opacity6: 0,
     opacity7: 0,
     opacity8: 0,
-    //当前显示的决定opacity
-    // animationData:{},
-    // buttonTop:10,
-    // buttonLeft:10,
+    
     spreakingAnimation1: {},
     spreakingAnimation2: {},
     spreakingAnimation3: {},
@@ -44,61 +36,10 @@ Page({
   onLoad: function (options) {
     this.setData({
       cook: options.cook,
-      one: list[0],
-      two: list[1],
-      three: list[2],
-      four: list[3],
-      five: list[4],
-      six: list[5],
-      seven: list[6],
-      eight: list[7]
     })
     seed = 0;
-    // var fileSrc1 = this.data.cook
-    // var len = fileSrc1.length
-    // for (var i = 0; i < len; i++) {
-    //   seed += (fileSrc1.charCodeAt(i) * Math.random())
-    // }
-    // seed = Number(Math.sin(seed).toString().substr(6))
-    // console.log(seed)
+    
   },
-  // onShow:function(){
-  //   this.animation = wx.createAnimation({
-  //     duration: 0,
-  //     timingFunction: 'ease',   
-  //     success: function (res) {  
-  //       _this.setData({  
-  //         screenHeight: res.windowHeight,  
-  //         screenWidth: res.windowWidth, 
-  //       });  
-  //     }
-  //   })
-      
-  // },
-  // buttonStart: function(e){
-  //   startPoint = e.touches[0]
-  // },
-  // buttonMove: function(e){
-  //   var endPoint = e.touches[e.touches.length-1]
-  //   var translateX = endPoint.clientX - startPoint.clientX
-  //   var translateY = endPoint.clientY - startPoint.clientY
-  //   startPoint = endPoint
-  //   var buttonTop = this.data.buttonTop + translateY
-  //   var buttonLeft = this.data.buttonLeft + translateX
-
-  //   if(endPoint.clientX < 0 || endPoint.clientX > this.data.screenWidth) return;
-  //   //if(endPoint.clientY < 0 || endPoint.clientY > this.data.screenHeight) return;
-
-  //   this.setData({
-  //   buttonTop:buttonTop,
-  //   buttonLeft:buttonLeft
-  //   })
-  // },
-  // buttonEnd: function(e){
-  //   // wx.navigateTo({
-  //   //   url: '../result?seed=' + startPoint.clientX,
-  //   // })
-  // },
   eat: function () {
     wx.navigateTo({
       url: 'result?seed=' + seed,
@@ -110,7 +51,7 @@ Page({
   showOne: function () {
     this.setData({
       opacity1: 1, 
-      fileSrc1: '/images/icon/01.PNG'
+      
     })
     var animation1 = wx.createAnimation({
       // duration: 400,
@@ -135,7 +76,7 @@ Page({
   showTwo: function () {
     this.setData({
       opacity2: 1,
-      fileSrc2: '/images/icon/02.PNG'
+      
     })
     var animation2 = wx.createAnimation({
       // duration: 400,
@@ -161,7 +102,7 @@ Page({
   showThree: function () {
     this.setData({
       opacity3: 1,
-      fileSrc3: '/images/icon/03.PNG'
+      
     })
     var animation3 = wx.createAnimation({
       // duration: 400,
@@ -187,7 +128,7 @@ Page({
   showFour: function () {
     this.setData({
       opacity4: 1,
-      fileSrc4: '/images/icon/04.PNG'
+      
     })
     var animation4 = wx.createAnimation({
       // duration: 400,
@@ -213,7 +154,7 @@ Page({
   showFive: function () {
     this.setData({
       opacity5: 1,
-      fileSrc5: '/images/icon/05.PNG'
+      
     })
     var animation5 = wx.createAnimation({
       // duration: 400,
@@ -239,7 +180,7 @@ Page({
   showSix: function () {
     this.setData({
       opacity6: 1,
-      fileSrc6: '/images/icon/06.PNG'
+      
       })
     var animation6 = wx.createAnimation({
         // duration: 400,
@@ -265,7 +206,7 @@ Page({
   showSeven: function () {
     this.setData({
       opacity7: 1,
-      fileSrc7: '/images/icon/07.PNG'
+      
     })
     var animation7 = wx.createAnimation({
       // duration: 400,
@@ -291,7 +232,7 @@ Page({
   showEight: function () {
     this.setData({
       opacity8: 1,
-      fileSrc8: '/images/icon/08.PNG'
+      
     })
     var animation8 = wx.createAnimation({
       // duration: 400,

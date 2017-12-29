@@ -1,18 +1,12 @@
- <!-- <view class='main_content'> 
-  <view class="page__desc">{{cook}}</view>
-  <image animation="{{spreakingAnimation}}" src="{{fileSrc}}" class="upload-img" wx:if="{{fileSrc}}" mode = 'widthFix' style='opacity : {{opacity}}'></image>
-  <button bindtap="eat" type="primary">开始</button>
-  <button bindtap="put" type="primary">扔</button>
- </view>  -->
  <view class='main_content'>
   <view class='scroll_countdown'>
     <image class='img1' src='/images/scroll1.png'></image>
   </view>
   <view class='pot_png'>
-    <image class='img3' src='/images/pot1.png'></image>
+    <image class='img3' src='{{img_POT}}'></image>
   </view>
   <view class='choose_ok'>
-    <image bindtap="eat" src='/images/id_OK.png' class='img_OK'>开始</image>
+    <image bindtap="eat" src='{{img_OK}}' class='img_OK'>开始</image>
   </view>
   <view class='food_png'>
     <image animation="{{spreakingAnimation1}}" src="{{fileSrc1}}" class='img2 img2_1' style='opacity : {{opacity1}}' wx:if="{{fileSrc1}}" mode = 'widthFix'></image> 
@@ -25,30 +19,19 @@
     <image animation="{{spreakingAnimation7}}" src="{{fileSrc7}}" class='img2 img2_7' style='opacity : {{opacity7}}' wx:if="{{fileSrc7}}" mode = 'widthFix'></image>
     <image animation="{{spreakingAnimation8}}" src="{{fileSrc8}}" class='img2 img2_8' style='opacity : {{opacity8}}' wx:if="{{fileSrc8}}" mode = 'widthFix'></image>
   </view>
-  
-<!-- <button class = "ball" bindtap="post" animation="{{animationData}}" catchtouchmove="buttonMove" catchtouchstart="buttonStart" catchtouchend="buttonEnd" style="fixed: absolute;top:{{buttonTop}}px;left:{{buttonLeft}}px;width : 60px; height : 60px; background : #FFFFFF;"></button> -->
 
   <view id="panel" class="flex-column">
     <view class="flex-cell flex-row">
-     <!-- <image class='img2' src='{{fileSrc}}'></image>  -->
-      <!-- <text bindtap="showOne" class="flex-cell flex-row">{{one}}</text> 
-      <text bindtap="showTwo" class="flex-cell flex-row">{{two}}</text>
-      <text bindtap="showThree" class="flex-cell flex-row">{{three}}</text>
-      <text bindtap="showFour" class="flex-cell flex-row">{{four}}</text>  -->
-      <view class='image-container'><image class='img_show_food' bindtap="showOne" src='/images/icon/01.PNG'></image></view>
-      <view class='image-container'><image class='img_show_food' bindtap="showTwo" src='/images/icon/02.PNG'></image></view>
-      <view class='image-container'><image class='img_show_food' bindtap="showThree" src='/images/icon/03.PNG'></image></view>
-      <view class='image-container'><image class='img_show_food' bindtap="showFour" src='/images/icon/04.PNG'></image></view>
+      <view class='image-container'><image class='img_show_food' bindtap="showOne" src='{{fileSrc1}}'></image></view>
+      <view class='image-container'><image class='img_show_food' bindtap="showTwo" src='{{fileSrc2}}'></image></view>
+      <view class='image-container'><image class='img_show_food' bindtap="showThree" src='{{fileSrc3}}'></image></view>
+      <view class='image-container'><image class='img_show_food' bindtap="showFour" src='{{fileSrc4}}'></image></view>
     </view>
     <view class="flex-cell flex-row">
-      <view class='image-container'><image class='img_show_food' bindtap="showFive" src='/images/icon/05.PNG'></image></view>
-      <view class='image-container'><image class='img_show_food' bindtap="showSix" src='/images/icon/06.PNG'></image></view>
-      <view class='image-container'><image class='img_show_food' bindtap="showSeven" src='/images/icon/07.PNG'></image></view>
-      <view class='image-container'><image class='img_show_food' bindtap="showEight" src='/images/icon/08.PNG'></image></view>
-      <!-- <text bindtap="showFive" class="flex-cell flex-row">{{five}}</text>
-      <text bindtap="showSix" class="flex-cell flex-row">{{six}}</text>
-      <text bindtap="showSeven" class="flex-cell flex-row">{{seven}}</text>
-      <text bindtap="showEight" class="flex-cell flex-row">{{eight}}</text> -->
+      <view class='image-container'><image class='img_show_food' bindtap="showFive" src='{{fileSrc5}}'></image></view>
+      <view class='image-container'><image class='img_show_food' bindtap="showSix" src='{{fileSrc6}}'></image></view>
+      <view class='image-container'><image class='img_show_food' bindtap="showSeven" src='{{fileSrc7}}'></image></view>
+      <view class='image-container'><image class='img_show_food' bindtap="showEight" src='{{fileSrc8}}'></image></view>
     </view>
   </view>
  </view>

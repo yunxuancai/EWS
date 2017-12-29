@@ -3,7 +3,9 @@
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
-   background-color: #FFAEB9; 
+   /* background-color: #FFAEB9;  */
+   background-image: url(http://ac-f5oadpis.clouddn.com/4bacec3c56758096d20d.jpg);
+   background-size: 100% 100%;
 } 
 .flex-row{
   display: flex;
@@ -45,7 +47,11 @@
 }
 .pot_png {
   display: inline-block;
+  /* border: 3rpx solid red; */
+  /* margin-top: 300rpx; */
+  /* height: 500rpx; */
   /* border: 1px solid red; */
+  /* box-shadow: 0 0 10px #fff; */
 }
 image {
   /* border: 1rpx solid blue;      */
@@ -53,12 +59,14 @@ image {
 .img1 {
   width: 90rpx;
   height: 700rpx;
+  opacity: 0;
 }
 .img2 {
   position: absolute; 
   /* margin-left: 20rpx;  */
   width: 126rpx;
   height: 168rpx;
+  /* margin-bottom: 10rpx; */
 }
 .img2_1 {
   /* display: inline-block; */
@@ -128,7 +136,7 @@ image {
   width: 105rpx;
    transform:scale(1.01); 
 }
-.image-container{
+.image-container {
   width: 187.5rpx;
   text-align: center;
   /* border: 1px solid red;  */

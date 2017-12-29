@@ -12,4 +12,8 @@
     <text bindtap="showFour" class="flex-cell2 flex-row">{{four}}</text>
   </view>
 </view>
+<button class='show-boy' bindtap='showBoy' type='primary'></button>
+<view class='handsome-boy'>
+  <image animation="{{anim}}" class='boy1' src='{{img_HANDSOMEBOY}}' style='opacity: {{opacity1}}'wx:if="{{img_HANDSOMEBOY}}" mode = 'widthFix' ></image>
+</view>
 <!--<button bindtap="share" type="primary">分享</button>-->
