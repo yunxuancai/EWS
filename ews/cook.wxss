@@ -4,7 +4,7 @@
   /* flex-direction: column; */
   /* align-items: center; */
    /* background-color: #FFAEB9;  */
-   background-image: url(http://ac-f5oadpis.clouddn.com/4bacec3c56758096d20d.jpg);
+   background-image: url(http://ac-F5oAdPIS.clouddn.com/ed0cf3250056d9dd6df5.jpg);
    background-size: 100% 100%;
 } 
 .flex-row{
@@ -47,8 +47,9 @@
 }
 .pot_png {
   display: inline-block;
+  transform: scale(0.9);
   /* border: 3rpx solid red; */
-  /* margin-top: 300rpx; */
+  /* margin-top: 130rpx;  */
   /* height: 500rpx; */
   /* border: 1px solid red; */
   /* box-shadow: 0 0 10px #fff; */

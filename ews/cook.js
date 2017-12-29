@@ -3,7 +3,7 @@ var seed = 0
 Page({
   data: {
     img_OK: 'http://ac-f5oadpis.clouddn.com/1e002520168e2620a135.png',
-    img_BG: 'http://ac-f5oadpis.clouddn.com/4bacec3c56758096d20d.jpg',
+    img_BG: 'http://ac-F5oAdPIS.clouddn.com/ed0cf3250056d9dd6df5.jpg',
     img_POT: 'http://ac-f5oadpis.clouddn.com/5735c19c94ce53831b67.png',
     img_HANDSOMEBOY: 'http://ac-f5oadpis.clouddn.com/0b32a502e72b5319f1a7.jpg',
     fileSrc1: 'http://ac-f5oadpis.clouddn.com/a41f110cbbdf9df86c42.PNG', // honey
