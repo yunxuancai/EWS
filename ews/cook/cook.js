@@ -23,6 +23,8 @@ Page({
     opacity6: 0,
     opacity7: 0,
     opacity8: 0,
+
+    clickCount: [0,0,0,0,0,0,0,0],
     
     spreakingAnimation1: {},
     spreakingAnimation2: {},
@@ -80,6 +82,7 @@ Page({
 
 
   eat: function () {
+<<<<<<< HEAD:ews/cook/cook.js
     // wx.navigateTo({
     //   url: 'result?seed=' + seed,
     //   complete: function (res) {
@@ -87,8 +90,22 @@ Page({
     //   }
     // })
     this.powerDrawer();
+=======
+    this.calculateMenu();
+    wx.navigateTo({
+      url: 'result?seed=' + seed,
+      complete: function (res) {
+        console.log(res)
+      }
+    })
+>>>>>>> 462af368220bf87b5c40b3f2a35ce062645d2afe:ews/cook.js
   },
   showOne: function () {
+    var temp = this.data.clickCount;
+    temp[0] ++;
+    this.setData({
+      clickCount: temp
+    })
     this.setData({
       opacity1: 1, 
       
@@ -114,6 +131,11 @@ Page({
     })
   },
   showTwo: function () {
+    var temp = this.data.clickCount;
+    temp[1]++;
+    this.setData({
+      clickCount: temp
+    })
     this.setData({
       opacity2: 1,
       
@@ -140,6 +162,11 @@ Page({
 
   },
   showThree: function () {
+    var temp = this.data.clickCount;
+    temp[2]++;
+    this.setData({
+      clickCount: temp
+    })
     this.setData({
       opacity3: 1,
       
@@ -166,6 +193,11 @@ Page({
 
   },
   showFour: function () {
+    var temp = this.data.clickCount;
+    temp[3]++;
+    this.setData({
+      clickCount: temp
+    })
     this.setData({
       opacity4: 1,
       
@@ -192,6 +224,11 @@ Page({
 
   },
   showFive: function () {
+    var temp = this.data.clickCount;
+    temp[4]++;
+    this.setData({
+      clickCount: temp
+    })
     this.setData({
       opacity5: 1,
       
@@ -218,6 +255,11 @@ Page({
 
   },
   showSix: function () {
+    var temp = this.data.clickCount;
+    temp[5]++;
+    this.setData({
+      clickCount: temp
+    })
     this.setData({
       opacity6: 1,
       
@@ -244,6 +286,11 @@ Page({
 
   },
   showSeven: function () {
+    var temp = this.data.clickCount;
+    temp[6]++;
+    this.setData({
+      clickCount: temp
+    })
     this.setData({
       opacity7: 1,
       
@@ -270,6 +317,11 @@ Page({
 
   },
   showEight: function () {
+    var temp = this.data.clickCount;
+    temp[7]++;
+    this.setData({
+      clickCount: temp
+    })
     this.setData({
       opacity8: 1,
       
@@ -295,6 +347,7 @@ Page({
     })
 
   },
+<<<<<<< HEAD:ews/cook/cook.js
 
 
   BindShare: function(){
@@ -359,4 +412,67 @@ Page({
       );
     }
   }
+=======
+  calculateMenu: function () {
+    var cc = this.data.clickCount
+    var index1 = new Array()
+    var index2 = new Array()
+    var menu = new Array(16)
+    for (var i = 0; i < 16; i++) {
+      menu[i] = i + 1;
+    }
+    var zeroCount1 = 0, zeroCount2 = 0
+    for(var i = 0; i < 4; i++){
+      index1[i] = i;
+      index2[i] = i;
+    }
+    
+    for (var i = 0; i < 3; i++) {
+      for (var j = i; j < 4; j++) {
+        if (cc[i] < cc[j]) {
+          [cc[i], cc[j]] = [cc[j], cc[i]];
+          [index1[i], index1[j]] = [index1[j], index1[i]];
+        }
+        if (cc[i + 4] < cc[j + 4]) {
+          [cc[i + 4], cc[j + 4]] = [cc[j + 4], cc[i + 4]];
+          [index2[i], index2[j]] = [index2[j], index2[i]];
+        }
+      }
+    }
+    if(cc[0] == cc[1]){
+      var num = Math.random();
+      if(num < 0.5){
+        cc[0]++;
+      } else{
+        cc[1]++;
+        [index1[0], index1[1]] = [index1[1], index1[0]]
+      }
+    }
+    if(cc[4] == cc[5]){
+      var num1 = Math.random();
+      if (num1 < 0.5) {
+        cc[4]++;
+      } else {
+        cc[5]++;
+        [index2[0], index2[1]] = [index2[1], index2[0]]
+      }
+    }
+    console.log(index1)
+    console.log(index2)
+    console.log(cc);
+
+    var menu_show_list = new Array();
+    for (var i = 0; i < 2; i++) {
+      for (var j = 0; j < 2; j++) {
+        menu_show_list[i * 2 + j] = menu[index2[i] * 4 + index1[j]];
+      }
+    }
+    console.log(menu_show_list);
+    seed = ""
+    for(var i = 0; i < 4; i++){
+      seed += menu_show_list[i]
+    }
+    console.log(seed)
+  },
+>>>>>>> 462af368220bf87b5c40b3f2a35ce062645d2afe:ews/cook.js
 })
