@@ -1,18 +1,12 @@
+
 {
   "pages": [
-    
-    
-    "ews/cook",
+    "ews/home/home",
+    "ews/cook/cook",
     "example/index",
     "ews/result",
     "ews/ews",
-    
-    
-    "ews/share",
-    "emotion",
-    "image/camera.png",
-    "result",
-    "pages/index/index"
+    "ews/share"
     
   ],
   "window": {

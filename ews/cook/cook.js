@@ -3,7 +3,7 @@ var seed = 0
 Page({
   data: {
     img_OK: 'http://ac-f5oadpis.clouddn.com/1e002520168e2620a135.png',
-    img_BG: 'http://ac-F5oAdPIS.clouddn.com/ed0cf3250056d9dd6df5.jpg',
+    img_BG: 'http://ac-F5oAdPIS.clouddn.com/d68072fd05d9b8951901.jpg',
     img_POT: 'http://ac-f5oadpis.clouddn.com/5735c19c94ce53831b67.png',
     img_HANDSOMEBOY: 'http://ac-f5oadpis.clouddn.com/0b32a502e72b5319f1a7.jpg',
     fileSrc1: 'http://ac-f5oadpis.clouddn.com/a41f110cbbdf9df86c42.PNG', // honey
@@ -32,21 +32,61 @@ Page({
     spreakingAnimation6: {},
     spreakingAnimation7: {},
     spreakingAnimation8: {},
+
+    Timer: 100,
+
+    showModalStatus: false,
+
+    ShareImage: "http://ac-F5oAdPIS.clouddn.com/85011b030771c943fca1.png",
+
+    SharePic1: "http://www.foodo.net/upimg/allimg/071226/_0922234R.jpg",
+    SharePic2: "http://www.foodo.net/upimg/allimg/071226/_0922234R.jpg",
+    SharePic3:"http://www.foodo.net/upimg/allimg/071226/_0922234R.jpg",
+    TopImage: "http://ac-F5oAdPIS.clouddn.com/01188f76063ba2d7feee.png"
+
   },
+
+  Timer: function () {
+    var that = this;
+    var t = setInterval(TimeCost, 200);
+    function TimeCost() {
+      console.log(that.data.Timer);
+      if (that.data.Timer <= 0) {
+        clearInterval(t);
+      }
+      else {
+        that.setData({
+          Timer: that.data.Timer - 1
+        })
+      }
+
+    }
+  },
+  
   onLoad: function (options) {
     this.setData({
       cook: options.cook,
     })
+    this.Timer();
+
+    // this.powerDrawer();
     seed = 0;
+
     
   },
+
+
+  
+
+
   eat: function () {
-    wx.navigateTo({
-      url: 'result?seed=' + seed,
-      complete: function (res) {
-        console.log(res)
-      }
-    })
+    // wx.navigateTo({
+    //   url: 'result?seed=' + seed,
+    //   complete: function (res) {
+    //     console.log(res)
+    //   }
+    // })
+    this.powerDrawer();
   },
   showOne: function () {
     this.setData({
@@ -255,4 +295,68 @@ Page({
     })
 
   },
+
+
+  BindShare: function(){
+    wx.navigateTo({
+      url: 'ews/share/share'
+    })
+  },
+
+
+  powerDrawer: function (e) {
+    var currentStatu = "open";
+    if (e) {
+      currentStatu = e.currentTarget.dataset.statu;
+    }
+    this.util(currentStatu);
+  },
+  util: function (currentStatu) {
+    /* 动画部分 */
+    // 第1步：创建动画实例 
+    var animation = wx.createAnimation({
+      duration: 0, //动画时长 
+      timingFunction: "linear", //线性 
+      delay: 0 //0则不延迟 
+    });
+
+    // 第2步：这个动画实例赋给当前的动画实例 
+    this.animation = animation;
+
+    // 第3步：执行第一组动画 
+    animation.opacity(0).step();
+
+    // 第4步：导出动画对象赋给数据对象储存 
+    this.setData({
+      animationData: animation.export()
+    })
+
+    // 第5步：设置定时器到指定时候后，执行第二组动画 
+    setTimeout(function () {
+      // 执行第二组动画 
+      animation.opacity(1).step();
+      // 给数据对象储存的第一组动画，更替为执行完第二组动画的动画对象 
+      this.setData({
+        animationData: animation
+      })
+
+      //关闭 
+      if (currentStatu == "close") {
+        this.setData(
+          {
+            showModalStatus: false
+          }
+        );
+      }
+    }.bind(this), 0)
+
+    // 显示 
+    if (currentStatu == "open") {
+      this.setData(
+        {
+          showModalStatus: true
+        }
+      );
+    }
+  }
 })
