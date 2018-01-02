@@ -1,6 +1,0 @@
-<view class="page">
-<view class="container" style="position: relative">
-                <button class = "ball" bindtap="post" animation="{{animationData}}" catchtouchmove="buttonMove" catchtouchstart="buttonStart" catchtouchend="buttonEnd" style="fixed: absolute;top:{{buttonTop}}px;left:{{buttonLeft}}px;width : 60px; height : 60px; background : #FFFFFF;"></button>
-            </view>
-            <view class="page__title"><text style = "color: #FFFFFF;position: relative;   left:45%">滑动！</text></view>
-</view>

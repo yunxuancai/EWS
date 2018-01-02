@@ -1,0 +1,26 @@
+/* ews/home/home.wxss */
+Page{
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+.PageContainer{
+   height: 29.5rem; 
+  /* width: 100%; */
+   /* border: 1px solid red;  */
+  background-image: url(http://ac-f5oadpis.clouddn.com/ed0cf3250056d9dd6df5.jpg);
+  background-size: 100% 100%;
+  text-align: center;
+  margin-top: -10px;
+}
+.StartLogo{
+  height: 200rpx;
+  width: 500rpx;
+  position: relative;
+  top: 600rpx;
+}
+.TopImage{
+  width: 100%;
+  height: 3rem;
+  /* border: 1px solid red; */
+  margin: 0px;
+}

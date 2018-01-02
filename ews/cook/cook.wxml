@@ -1,4 +1,22 @@
+<!--mask--> 
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view> 
+<!--content--> 
+<!--使用animation属性指定需要执行的动画--> 
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> 
+ 
+ <!--drawer content--> 
+ <view class="drawer_content">
+    <image class="SharePic1 SharePic" src="{{SharePic1}}"></image>
+    <image class="SharePic2 SharePic" src="{{SharePic2}}"></image>
+    <image class="SharePic3 SharePic" src="{{SharePic3}}"></image>   
+    <image class="ShareImage" src="{{ShareImage}}" bindtap='BindShare'></image>
+  </view> 
+  
+</view> 
+
  <view class='main_content'>
+  <progress percent="{{Timer}}"></progress>
+   <image class="TopImage" src="{{TopImage}}"></image> 
   <view class='scroll_countdown'>
     <image class='img1' src='/images/scroll1.png'></image>
   </view>
