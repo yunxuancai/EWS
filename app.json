@@ -1,13 +1,12 @@
 
 {
   "pages": [
-    "ews/cook/cook",
     "ews/home/home",
-    
+    "ews/share/share",
+    "ews/cook/cook",
     "example/index",
     "ews/result",
-    "ews/ews",
-    "ews/share"
+    "ews/ews"
     
   ],
   "window": {

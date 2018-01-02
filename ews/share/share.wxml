@@ -1,0 +1,37 @@
+<!--ews/share/share.wxml-->
+<image class = 'SharePic SharePic1' src = '{{SharePic1}}' ></image>
+<image class = 'SharePic SharePic2' src = '{{SharePic2}}' ></image>
+<image class = 'SharePic SharePic3' src = '{{SharePic3}}' ></image>
+<view class="page-container">
+  <view class="top">
+    
+  </view>
+  <view class="left-bottom">
+    <view class="LeftLogoContainer">
+      <image class="LeftLogo" src="{{LeftLogo1}}"></image>
+      <image class="LeftLogo" src="{{LeftLogo2}}"></image>
+      <image class="LeftLogo" src="{{LeftLogo3}}"></image>
+      <image class="LeftLogo" src="{{LeftLogo4}}"></image>
+      <image class="LeftLogo" src="{{LeftLogo5}}"></image>
+      <image class="LeftLogo" src="{{LeftLogo6}}"></image>
+      <image class="LeftLogo" src="{{LeftLogo7}}"></image>
+      <image class="LeftLogo" src="{{LeftLogo8}}"></image>
+
+      <image class="LeftBar LeftBar1" src="{{LeftBar}}" style='width: {{Bar[1]}}rpx'></image>
+      <image class="LeftBar LeftBar2" src="{{LeftBar}}" style='width: {{Bar[2]}}rpx'></image>
+      <image class="LeftBar LeftBar3" src="{{LeftBar}}" style='width: {{Bar[3]}}rpx'></image>
+      <image class="LeftBar LeftBar4" src="{{LeftBar}}" style='width: {{Bar[4]}}rpx'></image>
+      <image class="LeftBar LeftBar5" src="{{LeftBar}}" style='width: {{Bar[5]}}rpx'></image>
+      <image class="LeftBar LeftBar6" src="{{LeftBar}}" style='width: {{Bar[6]}}rpx'></image>
+      <image class="LeftBar LeftBar7" src="{{LeftBar}}" style='width: {{Bar[7]}}rpx'></image>
+      <image class="LeftBar LeftBar8" src="{{LeftBar}}" style='width: {{Bar[8]}}rpx'></image>
+
+    </view>
+    
+  </view>
+  <view class="right-bottom">
+    <image class="ShareLogo"src="{{ShareLogo}}"></image>
+    <button  open-type="share" class="ShareButton" ></button>
+  </view>
+
+</view>

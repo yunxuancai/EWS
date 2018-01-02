@@ -9,6 +9,24 @@
    position: relative;
 } 
 
+.TimeCounter{
+  position: absolute; 
+  height: 400rpx;
+  width: 100rpx;
+  top: 300rpx;
+  left: 50rpx;
+  z-index: 2;
+}
+.water{
+  background-color: #4091E5;
+  position: absolute; 
+    /* height: 350rpx;   */
+  width: 45rpx;
+  /* top: 330rpx; */
+  left: 77rpx;
+  z-index: 1;
+}
+
 .TopImage{
   position: absolute;
   height: 130rpx;
@@ -30,6 +48,39 @@ progress{
   -moz-transform:rotate(-90deg); 	/* Firefox */
   -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
   -o-transform:rotate(-90deg); 	/* Opera */
+}
+
+
+.FoodName{
+  position: absolute;
+  left: 280rpx;
+  transform: scale(1.1);
+  font-weight: 900;
+}
+.FoodName1{
+  top: 50rpx;
+}
+.FoodName2{
+  top: 290rpx;
+}
+.FoodName3{
+  top: 510rpx;
+}
+
+.FoodDes{
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 270rpx;
+}
+
+.FoodDes1{
+  top: 106rpx;
+}
+.FoodDes2{
+  top: 347rpx;
+}
+.FoodDes3{
+  top: 570rpx;
 }
 
 
@@ -153,8 +204,10 @@ image {
   margin-left: 584rpx;
 }
 .img3 {
-  margin-top: 190rpx;
-  height: 520rpx;
+  margin-top: 280rpx;
+  margin-left: 60rpx;
+  height: 420rpx;
+  width: 500rpx; 
 }
 .img_OK {
   height: 80rpx;
@@ -190,20 +243,23 @@ image {
 }
 
 .SharePic{
-    height: 170rpx;
+    height: 163rpx;
     width: 180rpx;
     border-radius: 10rpx;
     position: absolute;
     left: 50rpx;
+    z-index: 999!important;
 }
 .SharePic:nth-child(1) {
-  top: 40rpx;
+  height: 160rpx; 
+  top: 50rpx;
 }
 .SharePic:nth-child(2) {
   top: 275rpx;
 }
 .SharePic:nth-child(3) {
-  top: 505rpx;
+  height: 160rpx; 
+  top: 515rpx; 
 }
 
 
@@ -220,7 +276,7 @@ image {
  position: fixed; 
  top: 0; 
  left: 0; 
- z-index: 1000; 
+  z-index: 998;  
  background: #000; 
  opacity: 0.5; 
  overflow: hidden; 
@@ -247,11 +303,12 @@ image {
 } 
 .drawer_content { 
  height: 450px; 
- background-image: url(http://ac-F5oAdPIS.clouddn.com/cd93311613ab9ea8fc43.png);
+ background-image: url(http://ac-F5oAdPIS.clouddn.com/e3ce30c30e1e8caf2d5b.png);
  background-size: 101% 101%;
  background-position: -2px -2px;
  overflow-y: scroll; /*超出父盒子高度可滚动*/ 
  /* text-align: center; */
+ z-index: 1000; 
 } 
  
 .btn_ok{ 

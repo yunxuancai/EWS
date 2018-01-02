@@ -1,0 +1,103 @@
+/* ews/share/share.wxss */
+Page{
+  height: 100%;
+  width: 100%;
+}
+
+.page-container{
+  height: 100%;
+  width: 100%;
+  background: url(http://ac-F5oAdPIS.clouddn.com/ca881b34d0ce66ffa9c9.png);
+  background-size: 100% 100%;
+  z-index: 10;
+}
+
+.top{
+  /* border: 1px solid red; */
+  height: 300rpx;
+  position: relative;
+}
+.left-bottom{
+  display: inline-block;
+  /* border: 1px solid red; */
+  height: 500rpx;
+  width: 350rpx;
+}
+.right-bottom{
+  display: inline-block;
+  /* border: 1px solid red; */
+  height: 500rpx;
+  width: 380rpx;
+}
+.SharePic{
+  /* border: 3px solid blue;  */
+  position: absolute;
+  height: 210rpx;
+  width: 210rpx;
+  margin-left: 36rpx;
+  margin-top: 205rpx;
+  z-index: -2;
+}
+.SharePic1{
+  left: 0px;
+}
+.SharePic2{
+  left: 230rpx;
+}
+.SharePic3{
+  left: 460rpx;
+}
+.LeftLogo{
+  /* border: 1px solid red; */
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.LeftBar{
+  position: absolute;
+  
+  top: 490rpx;
+  left: 150rpx;
+  height: 20px;
+  width: 100px;
+  /* border: 1px solid black; */
+}
+.LeftBar2{
+  top: 580rpx;
+}
+.LeftBar3{
+  top: 660rpx;
+}
+.LeftBar4{
+  top: 750rpx;
+}
+.LeftBar5{
+  top: 830rpx;
+}
+.LeftBar6{
+  top: 910rpx;
+}
+.LeftBar7{
+  top: 990rpx;
+}
+.LeftBar8{
+  top: 1070rpx;
+}
+
+.ShareLogo{
+  position: absolute;
+  height: 100rpx;
+  width: 180rpx;
+  bottom: 60rpx;
+  right: 30rpx;
+  /* border: 1px solid black; */
+}
+.ShareButton{
+  position: absolute;
+  height: 100rpx;
+  width: 180rpx;
+  bottom: 60rpx;
+  right: 30rpx;
+  background-color: transparent;
+}
+
