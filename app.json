@@ -2,11 +2,19 @@
 {
   "pages": [
     "ews/home/home",
+<<<<<<< HEAD
     "ews/share/share",
     "ews/cook/cook",
     "example/index",
     "ews/result",
     "ews/ews"
+=======
+    "ews/cook/cook",
+    "example/index",
+    "ews/result",
+    "ews/ews",
+    "ews/share"
+>>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
     
   ],
   "window": {

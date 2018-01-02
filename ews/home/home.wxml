@@ -1,5 +1,10 @@
 <!--ews/home/home.wxml-->
+<<<<<<< HEAD
 <view class="PageContainer">
   <image class="TopImage" src="{{TopImage}}"></image>
+=======
+<image class="TopImage" src="{{TopImage}}"></image>
+<view class="PageContainer">
+>>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
   <image class="StartLogo" src="{{ImageLogo}}" bindtap='BindStart'></image>
 </view>
