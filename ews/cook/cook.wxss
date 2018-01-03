@@ -128,6 +128,8 @@ progress{
 .food_png {
   display: inline-block;
   position: absolute; 
+  transform : scale(0.9);
+  margin-left: 27rpx;
    /* float: left;  */
   /* border: 1px solid red; */
 }
@@ -153,6 +155,7 @@ image {
   /* margin-left: 20rpx;  */
   width: 126rpx;
   height: 168rpx;
+   /* transform:scale(0.9); */
   /* margin-bottom: 10rpx; */
 }
 .img2_1 {

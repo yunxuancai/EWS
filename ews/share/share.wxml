@@ -23,8 +23,9 @@
       <image class="LeftBar LeftBar4" src="{{LeftBar}}" style='width: {{Bar[4]}}rpx'></image>
       <image class="LeftBar LeftBar5" src="{{LeftBar}}" style='width: {{Bar[5]}}rpx'></image>
       <image class="LeftBar LeftBar6" src="{{LeftBar}}" style='width: {{Bar[6]}}rpx'></image>
-      <image class="LeftBar LeftBar7" src="{{LeftBar}}" style='width: {{Bar[7]}}rpx'></image>
-      <image class="LeftBar LeftBar8" src="{{LeftBar}}" style='width: {{Bar[8]}}rpx'></image>
+      <image class="LeftBar LeftBar8" src="{{LeftBar}}" style='width: {{Bar[7]}}rpx'></image>
+      <image class="LeftBar LeftBar7" src="{{LeftBar}}" style='width: {{Bar[8]}}rpx'></image>
+      
 
     </view>
     

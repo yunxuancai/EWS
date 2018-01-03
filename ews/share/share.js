@@ -25,7 +25,7 @@ Page({
     console.log(app.globalData.clickCount);
     var Bar = [];
     for (var i = 0 ; i < 8 ; i++) {
-      Bar[i + 1] = 10 + Math.min(app.globalData.clickCount[i],10) * 14
+      Bar[i + 1] = 20 + Math.min(app.globalData.clickCount[i],10) * 21
     }
     that.setData({
       Bar : Bar

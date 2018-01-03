@@ -134,10 +134,10 @@ Page({
     animation1.opacity(1).translateX(0).translateY(0).step({
       duration: 70,
     });
-    animation1.opacity(1).translateX(160).translateY(-380).step({
+    animation1.opacity(1).translateX(175).translateY(-380).step({
       duration: 210,
     });
-    animation1.opacity(0).translateX(160).translateY(-200).step({
+    animation1.opacity(0).translateX(175).translateY(-200).step({
       duration: 110,
     })
     animation1.opacity(0).translateX(0).translateY(0).step({
@@ -161,10 +161,10 @@ Page({
     animation2.opacity(1).translateX(0).translateY(0).step({
       duration: 70,
     });
-    animation2.opacity(1).translateX(60).translateY(-380).step({
+    animation2.opacity(1).translateX(75).translateY(-380).step({
       duration: 210,
     });
-    animation2.opacity(0).translateX(60).translateY(-200).step({
+    animation2.opacity(0).translateX(75).translateY(-200).step({
       duration: 110,
     })
     animation2.opacity(0).translateX(0).translateY(0).step({
@@ -189,10 +189,10 @@ Page({
     animation3.opacity(1).translateX(0).translateY(0).step({
       duration: 70,
     });
-    animation3.opacity(1).translateX(-20).translateY(-380).step({
+    animation3.opacity(1).translateX(-5).translateY(-380).step({
       duration: 210,
     });
-    animation3.opacity(0).translateX(-20).translateY(-200).step({
+    animation3.opacity(0).translateX(-5).translateY(-200).step({
       duration: 110,
     })
     animation3.opacity(0).translateX(0).translateY(0).step({
@@ -217,10 +217,10 @@ Page({
     animation4.opacity(1).translateX(0).translateY(0).step({
       duration: 70,
     });
-    animation4.opacity(1).translateX(-110).translateY(-380).step({
+    animation4.opacity(1).translateX(-95).translateY(-380).step({
       duration: 210,
     });
-    animation4.opacity(0).translateX(-110).translateY(-200).step({
+    animation4.opacity(0).translateX(-95).translateY(-200).step({
       duration: 110,
     })
     animation4.opacity(0).translateX(0).translateY(0).step({
@@ -245,10 +245,10 @@ Page({
     animation5.opacity(1).translateX(0).translateY(0).step({
       duration: 70,
     });
-    animation5.opacity(1).translateX(160).translateY(-450).step({
+    animation5.opacity(1).translateX(175).translateY(-450).step({
       duration: 210,
     });
-    animation5.opacity(0).translateX(160).translateY(-250).step({
+    animation5.opacity(0).translateX(175).translateY(-250).step({
       duration: 110,
     })
     animation5.opacity(0).translateX(0).translateY(0).step({
@@ -273,10 +273,10 @@ Page({
     animation6.opacity(1).translateX(0).translateY(0).step({
       duration: 70,
     });
-    animation6.opacity(1).translateX(60).translateY(-450).step({
+    animation6.opacity(1).translateX(75).translateY(-450).step({
       duration: 210,
     });
-    animation6.opacity(0).translateX(60).translateY(-250).step({
+    animation6.opacity(0).translateX(75).translateY(-250).step({
       duration: 110,
     })
     animation6.opacity(0).translateX(0).translateY(0).step({
@@ -301,10 +301,10 @@ Page({
     animation7.opacity(1).translateX(0).translateY(0).step({
       duration: 70,
     });
-    animation7.opacity(1).translateX(-20).translateY(-450).step({
+    animation7.opacity(1).translateX(-5).translateY(-450).step({
       duration: 210,
     });
-    animation7.opacity(0).translateX(-20).translateY(-250).step({
+    animation7.opacity(0).translateX(-5).translateY(-250).step({
       duration: 110,
     })
     animation7.opacity(0).translateX(0).translateY(0).step({
@@ -329,10 +329,10 @@ Page({
     animation8.opacity(1).translateX(0).translateY(0).step({
       duration: 70,
     });
-    animation8.opacity(1).translateX(-110).translateY(-450).step({
+    animation8.opacity(1).translateX(-95).translateY(-450).step({
       duration: 210,
     });
-    animation8.opacity(0).translateX(-110).translateY(-250).step({
+    animation8.opacity(0).translateX(-95).translateY(-250).step({
       duration: 110,
     });
     animation8.opacity(0).translateX(0).translateY(0).step({
@@ -411,12 +411,15 @@ Page({
 
 
   calculateMenu: function () {
-    var cc = this.data.clickCount
+    var cc = new Array()
+    for(var i = 0; i < 8; i++){
+      cc[i] = this.data.clickCount[i];
+    }
     var index1 = new Array()
     var index2 = new Array()
     var menu = new Array(16)
     for (var i = 0; i < 16; i++) {
-      menu[i] = i + 1;
+      menu[i] = i;
     }
     var zeroCount1 = 0, zeroCount2 = 0
     for (var i = 0; i < 4; i++) {
@@ -457,21 +460,31 @@ Page({
     console.log(index1)
     console.log(index2)
     console.log(cc);
+    console.log(this.data.clickCount);
 
     var menu_show_list = new Array();
     menu_show_list = [];
 
-    for (var i = 0; i < 2; i++) {
-      for (var j = 0; j < 2; j++) {
-        menu_show_list[i * 2 + j] = menu[index2[i] * 4 + index1[j]];
-      }
+    // for (var i = 0; i < 2; i++) {
+    //   for (var j = 0; j < 2; j++) {
+    //     menu_show_list[i * 2 + j] = menu[index2[i] * 4 + index1[j]];
+    //   }
+    // }
+    menu_show_list[0]=menu[index2[0] * 4 + index1[0]];
+    if(index1[0] > index2[0]){
+      menu_show_list[1] = menu[index2[1] * 4 + index1[0]];
+      menu_show_list[2] = menu[index2[0] * 4 + index1[1]]
+    } else{
+      menu_show_list[1] = menu[index2[0] * 4 + index1[1]];
+      menu_show_list[2] = menu[index2[1] * 4 + index1[0]];
     }
-    // console.log(menu_show_list);
+
     app.globalData.clickCount = this.data.clickCount;
     this.setData({
       menu_show_list: menu_show_list,
       clickCount: [0, 0, 0, 0, 0, 0, 0, 0]
     })
+    console.log(menu_show_list);
     app.globalData.SharePic1 = this.data.foodList[this.data.menu_show_list[0]].url;
     app.globalData.SharePic2 = this.data.foodList[this.data.menu_show_list[1]].url;
     app.globalData.SharePic3 = this.data.foodList[this.data.menu_show_list[2]].url;
@@ -481,6 +494,6 @@ Page({
     for (var i = 0; i < 4; i++) {
       seed += menu_show_list[i]
     }
-    console.log(seed);
+    //console.log(seed);
   },
 })

@@ -4,9 +4,7 @@
     "ews/home/home",
     "ews/share/share",
     "ews/cook/cook",
-    "example/index",
-    "ews/result",
-    "ews/ews"
+    "example/index"
     
   ],
   "window": {

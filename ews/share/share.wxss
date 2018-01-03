@@ -59,7 +59,7 @@ Page{
   top: 490rpx;
   left: 150rpx;
   height: 20px;
-  width: 100px;
+  width: 230px;
   /* border: 1px solid black; */
 }
 .LeftBar2{
