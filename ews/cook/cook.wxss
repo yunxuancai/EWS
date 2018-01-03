@@ -9,7 +9,6 @@
    position: relative;
 } 
 
-<<<<<<< HEAD
 .TimeCounter{
   position: absolute; 
   height: 400rpx;
@@ -28,8 +27,6 @@
   z-index: 1;
 }
 
-=======
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
 .TopImage{
   position: absolute;
   height: 130rpx;
@@ -54,7 +51,6 @@ progress{
 }
 
 
-<<<<<<< HEAD
 .FoodName{
   position: absolute;
   left: 280rpx;
@@ -88,8 +84,6 @@ progress{
 }
 
 
-=======
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -210,15 +204,10 @@ image {
   margin-left: 584rpx;
 }
 .img3 {
-<<<<<<< HEAD
   margin-top: 280rpx;
   margin-left: 60rpx;
   height: 420rpx;
   width: 500rpx; 
-=======
-  margin-top: 190rpx;
-  height: 520rpx;
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
 }
 .img_OK {
   height: 80rpx;
@@ -254,37 +243,23 @@ image {
 }
 
 .SharePic{
-<<<<<<< HEAD
     height: 163rpx;
-=======
-    height: 170rpx;
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
     width: 180rpx;
     border-radius: 10rpx;
     position: absolute;
     left: 50rpx;
-<<<<<<< HEAD
     z-index: 999!important;
 }
 .SharePic:nth-child(1) {
   height: 160rpx; 
   top: 50rpx;
-=======
-}
-.SharePic:nth-child(1) {
-  top: 40rpx;
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
 }
 .SharePic:nth-child(2) {
   top: 275rpx;
 }
 .SharePic:nth-child(3) {
-<<<<<<< HEAD
   height: 160rpx; 
   top: 515rpx; 
-=======
-  top: 505rpx;
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
 }
 
 
@@ -301,11 +276,7 @@ image {
  position: fixed; 
  top: 0; 
  left: 0; 
-<<<<<<< HEAD
   z-index: 998;  
-=======
- z-index: 1000; 
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
  background: #000; 
  opacity: 0.5; 
  overflow: hidden; 
@@ -332,19 +303,12 @@ image {
 } 
 .drawer_content { 
  height: 450px; 
-<<<<<<< HEAD
  background-image: url(http://ac-F5oAdPIS.clouddn.com/e3ce30c30e1e8caf2d5b.png);
-=======
- background-image: url(http://ac-F5oAdPIS.clouddn.com/cd93311613ab9ea8fc43.png);
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
  background-size: 101% 101%;
  background-position: -2px -2px;
  overflow-y: scroll; /*超出父盒子高度可滚动*/ 
  /* text-align: center; */
-<<<<<<< HEAD
  z-index: 1000; 
-=======
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
 } 
  
 .btn_ok{ 

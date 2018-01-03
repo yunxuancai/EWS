@@ -5,7 +5,6 @@
 <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> 
  
  <!--drawer content--> 
-<<<<<<< HEAD:ews/cook/cook.wxml
   
  <view class="drawer_content">
     <image class="SharePic1 SharePic" src="{{foodList[menu_show_list[0]].url}}"></image>
@@ -30,19 +29,6 @@
   <image class = "TimeCounter" src = "http://ac-F5oAdPIS.clouddn.com/b8be6bb8849744b4bb70.png"></image>
   <!-- <progress percent="{{Timer}}"></progress> -->
   <view class = "water" style = "height:{{WaterHeight}}rpx; top:{{WaterTop}}rpx"></view>
-=======
- <view class="drawer_content">
-    <image class="SharePic1 SharePic" src="{{SharePic1}}"></image>
-    <image class="SharePic2 SharePic" src="{{SharePic2}}"></image>
-    <image class="SharePic3 SharePic" src="{{SharePic3}}"></image>   
-    <image class="ShareImage" src="{{ShareImage}}" bindtap='BindShare'></image>
-  </view> 
-  
-</view> 
-
- <view class='main_content'>
-  <progress percent="{{Timer}}"></progress>
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790:ews/cook/cook.wxml
    <image class="TopImage" src="{{TopImage}}"></image> 
   <view class='scroll_countdown'>
     <image class='img1' src='/images/scroll1.png'></image>

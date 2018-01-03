@@ -4,21 +4,13 @@ Page{
   /* border: 1px solid blue; */
 }
 .PageContainer{
-<<<<<<< HEAD
    height: 100%; 
-=======
-   height: 29.5rem; 
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
   /* width: 100%; */
    /* border: 1px solid red;  */
   background-image: url(http://ac-f5oadpis.clouddn.com/ed0cf3250056d9dd6df5.jpg);
   background-size: 100% 100%;
   text-align: center;
-<<<<<<< HEAD
   /* margin-top: -10px; */
-=======
-  margin-top: -10px;
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
 }
 .StartLogo{
   height: 200rpx;
@@ -27,17 +19,10 @@ Page{
   top: 600rpx;
 }
 .TopImage{
-<<<<<<< HEAD
   width: 85%;
   height: 2.8rem;
 
   /* border: 1px solid red; */
   /* margin: 0px; */
   margin-top: 50rpx;
-=======
-  width: 100%;
-  height: 3rem;
-  /* border: 1px solid red; */
-  margin: 0px;
->>>>>>> 446a061952057ae18989bba1d744aeb3f7c5c790
 }
